@@ -1,0 +1,263 @@
+/*----------------------------------------------------
+    google font link start here
+-----------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400&family=Zen+Dots&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+/*google font link ends here
+-----------------------------------------------------*/
+/*
+    variable declaration starts here
+*/
+:root {
+  --clr-primary: #38e6ef;
+  --clr-1: #090e0e;
+  --clr-2: #e0dad4;
+  --clr-3: #fba00b;
+  --clr-4: #27dce5;
+  --clr-5: #6f7771;
+  --clr-6: #9c3b39;
+  --clr-7: #64c6b2;
+  --clr-sec: #fba00b;
+  --text-clr: #e5e5e5;
+  --white: #ffffff;
+  --body-clr: #141414;
+  --parentSpace: 30px 30px 0 30px;
+  /*========== Font and typography ==========*/
+  --Readex: "Readex Pro", sans-serif;
+  --zent: "Zen Dots", cursive;
+  --biggest-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --text-width: 400px;
+  /*========== Font weight ==========*/
+  --thin: 300;
+  --regular: 400;
+}
+
+/*
+    variable declaration ends here
+*/
+/* Responsive typography */
+@media screen and (min-width: 992px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+.title {
+  line-height: 1;
+  font-size: var(--biggest-font-size);
+  font-family: var(--zent);
+}
+
+.head {
+  background-color: rgba(251, 159, 11, 0.3019607843);
+  width: -moz-max-content;
+  width: max-content;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-family: var(--zent);
+  font-size: var(--small-font-size);
+  text-transform: capitalize;
+}
+
+.btn {
+  background-color: #e5e5e5;
+  text-transform: capitalize;
+  font-family: var(--zent);
+  position: relative;
+  font-size: var(--small-font-size);
+}
+
+h1,
+h2,
+h3,
+p {
+  max-width: 600px;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+a,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body {
+  font-family: var(--Readex);
+  font-weight: var(--thin);
+  position: relative;
+  line-height: 1.3;
+  color: var(--white);
+  background-color: var(--body-clr);
+  width: 100%;
+  overflow-x: hidden;
+  background: url(../images/arc.jpg) no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+main {
+  min-height: 100vh;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+main #home {
+  width: 100%;
+  padding: var(--parentSpace);
+  display: flex;
+  place-items: center;
+}
+main #home .row {
+  justify-content: space-between;
+}
+main #home .row div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+main #home .row div .btn {
+  background-color: #e5e5e5;
+  text-transform: capitalize;
+  font-family: var(--zent);
+  position: relative;
+  font-size: var(--small-font-size);
+}
+main #home .row div .home-img {
+  max: 500px;
+}
+main #about {
+  width: 100%;
+  display: flex;
+  place-items: center;
+}
+main #about .row {
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+}
+main #about .row .about-img {
+  width: 25rem;
+}
+main #about .row p {
+  max-width: 40rem;
+}
+main #tokenomics {
+  width: 100%;
+  padding: var(--parentSpace);
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+main #tokenomics .head {
+  text-align: center;
+  margin: 0 auto;
+}
+main #tokenomics .title {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: var(--h1-font-size);
+  margin: 0 auto;
+}
+main #tokenomics .info {
+  margin: 0 auto;
+  text-align: center;
+}
+main #tokenomics .row {
+  width: 100%;
+  place-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 2rem;
+  row-gap: 60px;
+}
+main #tokenomics .row div {
+  background-color: rgb(0, 16, 26);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 5px;
+  border-bottom: 0;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  filter: drop-shadow(1px 0px 2px);
+}
+main #tokenomics .row div h4 {
+  font-family: var(--zent);
+  font-size: var(--small-font-size);
+  text-transform: capitalize;
+}
+main #buy {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 20px 0;
+}
+main #buy iframe {
+  max-width: 95%;
+}
+main #token-info {
+  width: 100%;
+  padding: var(--parentSpace);
+}
+main #token-info .head {
+  margin-inline: auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+main #token-info .token-details {
+  width: 100%;
+  background-color: #141414;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 10px;
+}
+main #token-info .token-details .token-m {
+  display: flex;
+}
+@media screen and (min-width: 500px) {
+  main #token-info .token-details {
+    max-width: 600px;
+  }
+}/*# sourceMappingURL=style.css.map */
