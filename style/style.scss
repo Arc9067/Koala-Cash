@@ -475,8 +475,9 @@ main {
         margin: 0 auto;
         h4 {
           font-family: var(--zent);
-          font-size: var(--small-font-size);
+          font-size: var(--h2-font-size);
           text-transform: capitalize;
+          color: var(--clr-sec);
         }
       }
     }
