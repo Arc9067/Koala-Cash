@@ -14,11 +14,66 @@
     <title>Document</title>
   </head>
   <body>
+    <section class="loading">
+      <div class="inner-loading">
+
+      </div>
+    </section>
+    <header class="mobile-head">
+      <nav class="inner-mobile">
+        <a href=""><img src="./images/logo.png" alt="logo" /></a>
+        <i class="bi bi-list nav-list"></i>
+      </nav>
+    </header>
+
+    <nav class="mobile-nav">
+      <i class="bi bi-x-lg close-nav"></i>
+      <div class="nav-ul">
+        <ul>
+          <li class="mobile-list"><a href="#home">home</a></li>
+          <li class="mobile-list"><a href="#about">about</a></li>
+          <li class="mobile-list"><a href="#benefit">benefits</a></li>
+          <li class="mobile-list"><a href="#buy">buy</a></li>
+        </ul>
+        <div class="social-icon">
+          <a class="mobile-list" href="#"><i class="bi bi-telegram"></i></a>
+          <a class="mobile-list" href="#"><i class="bi bi-twitter"></i></a>
+          <a class="mobile-list" href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="large-head">
+      <nav class="inner-nav">
+        <a href="" class="back-home"
+          ><img src="./images/logo.png" alt="logo" style="width: 3rem" />koala
+          <span> cash</span></a
+        >
+        <div class="navlink">
+          <ul>
+            <li class="li-txt"><a href="#home">home</a></li>
+            <li class="li-txt"><a href="#about">about</a></li>
+            <li class="li-txt"><a href="#benefit">benefit</a></li>
+            <li class="li-txt"><a href="#buy">buy</a></li>
+            <li class="li-btn"><a class="btn btn-lg" href="">chart</a></li>
+            <li class="li-btn"><a class="btn btn-lg" href="#">ape now</a></li>
+            <li class="li-txt">
+              <a href=""><i class="bi bi-telegram"></i></a>
+            </li>
+            <li class="li-txt">
+              <a href=""><i class="bi bi-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <main>
       <section id="home">
         <div class="row">
           <div class="col-sm-12 colg-6 col-md-6">
-            <h1 class="title">Koala Cash Ethereum crypto for transactions</h1>
+            <h1 class="title">
+              <span>Koala Cash</span> Ethereum crypto for transactions
+            </h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
               expedita alias quasi reiciendis atque pariatur fugit, eos corrupti
@@ -33,14 +88,14 @@
       </section>
       <section id="about">
         <div class="row">
-          <div class="col-sm-12 colg-5 col-md-5">
+          <div class="col-sm-12 colg-5 col-md-5 about-row-img">
             <img
               src="./images/133b43f3290 copy.png"
               class="about-img"
               alt="Logo"
             />
           </div>
-          <div class="col-sm-12 colg-6 col-md-6">
+          <div class="col-sm-12 colg-6 col-md-6 about-row-txt">
             <h4 class="head">about me</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
@@ -64,9 +119,9 @@
         </div>
       </section>
 
-      <section id="tokenomics">
+      <section id="benefit">
         <h4 class="head">my benfits</h4>
-        <h1 class="title">the way of koala</h1>
+        <h1 class="title">the way of <span>koala</span></h1>
         <p class="info">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
           dolorum cumque libero placeat consequatur nulla esse deserunt incidunt
@@ -112,23 +167,26 @@
           src="https://flooz.trade/embed/trade?swapDisabled=false&swapLockToToken=false&onRampDisabled=false&onRampAsDefault=false&onRampDefaultAmount=200&network=eth&lightMode=false&primaryColor=%23000000&roundedCorners=15&padding=20&refId=xA5kqU"
         ></iframe>
       </section>
-
-      <!-- <section id="token-info">
-        <h2 class="head">token info</h2>
-        <div class="token-details">
-          <div class="token-m">
-              <i class="bi bi-person-video2"></i>
-              <h4>name</h4>
-              <h3>koala</h3>
-          </div>
-        </div>
-      </section> -->
     </main>
+
+    <footer>
+      <div class="logo-div">
+        <img src="./images/logo.png" style="width: 3rem" alt="" />
+        <h4>koala <span>cash</span></h4>
+      </div>
+      <p class="cp">copyright © 2023 koala cash, all rights reserved.</p>
+
+      <div class="social-icon">
+        <a href="#"><i class="bi bi-telegram"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    `
+    <script src="./script.js"></script>
   </body>
 </html>
