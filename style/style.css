@@ -442,6 +442,7 @@ main #buy {
   display: grid;
   place-items: center;
   padding: 20px 0;
+  margin-top: 30px;
 }
 main #buy iframe {
   max-width: 95%;
